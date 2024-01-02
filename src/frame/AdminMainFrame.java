@@ -192,7 +192,7 @@ public class AdminMainFrame extends javax.swing.JFrame {
             try{
                 ps = connection.prepareStatement(sql);
                 if(!keyword.equals("")){
-                ps.setString(1, "%"+eCari.getText()+"%");
+                ps.setString(1, "%"+eCariGaji.getText()+"%");
                 ps.setString(2, "%"+eCariGaji.getText()+"%");
             }
             rs = ps.executeQuery();
